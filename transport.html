@@ -1,10 +1,90 @@
----
-title: 填寫基本資料
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>甜點店</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
 
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="material-icons-round"> menu </span>
+        </button>
+        <a class="navbar-brand d-none d-md-inline-block" href="#">
+          <img
+            src="https://raw.githubusercontent.com/Wcc723/F2E-PK/master/source/images/logo.svg"
+            width="50"
+            height="50"
+            alt="logo"
+          />
+        </a>
+        <a href="#" class="navbar-brand d-inline-block">
+          <img
+            src="https://raw.githubusercontent.com/Wcc723/F2E-PK/master/source/images/logotype.svg"
+            width="172"
+            height="27"
+            alt="sweet logo"
+          />
+        </a>
+        <a class="nav-link d-inline-block d-md-none my-auto" href="#">
+          <span class="material-icons-round"> shopping_cart </span>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item">
+              <a class="nav-hover nav-link ps-3 ps-md-12" href="#">
+                <p class="fw-bold m-0">首頁</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-hover nav-link ps-3 ps-md-12" href="#">
+                <p class="fw-bold m-0">甜點</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-hover nav-link ps-3 ps-md-12" href="#">
+                <p class="fw-bold m-0">登入</p>
+              </a>
+            </li>
+            <li class="nav-item d-none d-md-block">
+              <a class="nav-hover nav-link ps-md-12" href="#">
+                <span class="material-icons-round"> shopping_cart </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
 <!-- 手機 -->
 <section class="d-block d-md-none">
   <div class="row">
@@ -434,3 +514,97 @@ current: index
     </div>
   </div>
 </section>
+
+
+    <section class="bg-primary py-5">
+      <div
+        class="
+          container
+          d-flex
+          flex-column flex-md-row
+          justify-content-md-between
+        "
+      >
+        <div class="d-flex align-items-center mx-auto mx-md-0">
+          <a href="#">
+            <img
+              width="40"
+              height="40"
+              src="https://raw.githubusercontent.com/Wcc723/F2E-PK/master/source/images/logo-light.svg"
+              alt="logo"
+            />
+          </a>
+          <h4 class="text-white m-0 ms-3">訂閱你我的甜蜜郵件</h4>
+        </div>
+        <div
+          class="input-group d-flex input-width mt-6 mt-md-0 mx-auto mx-md-0"
+        >
+          <span class="input-group-text bg-white border-0 rounded-0">
+            <span class="material-icons-round text-primary"> email </span>
+          </span>
+          <input type="text" class="form-control border-0" />
+          <button class="btn btn-warning rounded-0" type="button">
+            <span class="material-icons-round align-middle text-primary">
+              arrow_forward
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-info">
+      <div class="container">
+        <div class="d-flex justify-content-between py-6">
+          <div class="d-flex flex-column justify-content-between">
+            <a class="navbar-brand d-block" href="#">
+              <img
+                src="https://raw.githubusercontent.com/Wcc723/F2E-PK/master/source/images/logotype.svg"
+                width="172"
+                height="27"
+                alt="sweet logo"
+              />
+            </a>
+            <ul class="list-unstyled mt-6 mt-md-0">
+              <li class="text-primary">07-1234-5678</li>
+              <li class="text-primary">sweetaste@email.com</li>
+              <li class="text-primary">800 高雄市新興區幸福路 520 號</li>
+            </ul>
+          </div>
+          <img
+            class="d-none d-md-block"
+            width="80"
+            src="https://raw.githubusercontent.com/Wcc723/F2E-PK/master/source/images/sm-%E4%BB%8A%E5%A4%A9%E6%98%AF%E5%80%8B%E5%90%83%E7%94%9C%E9%BB%9E%E7%9A%84%E5%A5%BD%E6%97%A5%E5%AD%90.svg"
+            alt="nice day"
+          />
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-md-between">
+          <ul class="list-unstyled d-flex">
+            <li class="me-2">
+              <a href="#">
+                <img
+                  width="32"
+                  height="32"
+                  src="https://raw.githubusercontent.com/Wcc723/F2E-PK/master/source/images/ic-line%40.svg"
+                  alt="line@"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  width="32"
+                  height="32"
+                  src="https://raw.githubusercontent.com/Wcc723/F2E-PK/master/source/images/ic-facebook.svg"
+                  alt="fb"
+                />
+              </a>
+            </li>
+          </ul>
+          <p class="text-primary">© 2018 Sweetaste* All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
