@@ -1,0 +1,18 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+// @import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../../node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+@import "../../../node_modules/bootstrap/scss/_mixins.scss";
+
+@import './layout/mixin';
+@import './layout/layout';
+
+@import './pages/index';
+@import './pages/product';
+@import './pages/login';
+@import './pages/cart';
+@import './pages/transport';
+@import './pages/success';
+@import './pages/payment';
+@import './pages/invoice';

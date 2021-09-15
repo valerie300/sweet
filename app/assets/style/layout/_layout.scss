@@ -1,0 +1,14 @@
+// header
+.nav-hover:hover{
+    color: #8DA291;
+}
+// footer
+.input-width{
+    width: 380px;
+    height: 56px;
+}
+@include media-breakpoint-down(md) {
+    .input-width{
+        width: 315px;
+    }
+}

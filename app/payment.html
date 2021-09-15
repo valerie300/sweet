@@ -1,0 +1,488 @@
+---
+title: 付款資訊
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<!-- 手機 -->
+<section class="d-block d-md-none">
+  <div class="row">
+    <div class="col-12">
+      <div class="bg-primary px-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 class="fw-bold text-white text-center pt-4 pb-4 fs-1 m-0">
+            付款
+          </h2>
+          <div class="row timeline-section position-relative">
+            <div class="col-4">
+              <div
+                class="
+                  timeline-pointer timeline-pointer-active
+                  d-flex
+                  justify-content-between
+                  position-relative
+                "
+              ></div>
+            </div>
+            <div class="col-4">
+              <div
+                class="
+                  timeline-pointer
+                  d-flex
+                  justify-content-between
+                  position-relative
+                "
+              ></div>
+            </div>
+            <div class="col-4">
+              <div
+                class="
+                  timeline-pointer
+                  d-flex
+                  justify-content-between
+                  position-relative
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+        <form>
+          <div class="mb-3">
+            <label for="inputNum" class="form-label text-white fw-bold fs-5"
+              >信用卡卡號</label
+            >
+            <div class="d-flex">
+              <input
+                type="text"
+                placeholder="9012-3456-7890-1234"
+                class="bg-info form-control rounded-0 border-0 py-3"
+                id="inputNum"
+              />
+              <span
+                class="
+                  input-group-text
+                  bg-info
+                  border-0
+                  rounded-0
+                  text-primary
+                "
+              >
+                <span class="material-icons-round"> credit_card </span>
+              </span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="mb-3">
+              <label for="inputName" class="form-label text-white fw-bold fs-5"
+                >持卡人姓名</label
+              >
+              <div class="d-flex">
+                <input
+                  type="text"
+                  placeholder="王"
+                  class="
+                    bg-info
+                    me-3
+                    form-control
+                    rounded-0
+                    border-0
+                    py-3
+                    pe-17
+                  "
+                  id="inputName"
+                  aria-describedby="inputText"
+                />
+                <input
+                  type="text"
+                  placeholder="小明"
+                  class="bg-info form-control rounded-0 border-0 py-3 pe-17"
+                  id="inputText2"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="mb-3">
+              <label class="form-label text-white fw-bold fs-5">有效期限</label>
+              <div class="d-flex justify-content-between">
+                <select
+                  class="
+                    bg-info
+                    input-address
+                    form-select
+                    rounded-0
+                    border-0
+                    py-3
+                    me-3
+                  "
+                  aria-label="Default select example"
+                >
+                  <option selected>月</option>
+                  <option value="1">2月</option>
+                  <option value="2">10月</option>
+                  <option value="3">12月</option>
+                </select>
+                <select
+                  class="
+                    bg-info
+                    input-address
+                    form-select
+                    rounded-0
+                    border-0
+                    py-3
+                  "
+                  aria-label="Default select example"
+                >
+                  <option selected>年</option>
+                  <option value="1">2021</option>
+                  <option value="2">2020</option>
+                  <option value="3">2019</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="pb-10">
+            <label for="inputText" class="form-label text-white fw-bold fs-5"
+              >背面末三碼</label
+            >
+            <input
+              type="text"
+              placeholder="123"
+              class="
+                bg-info
+                last-number
+                me-3
+                form-control
+                rounded-0
+                border-0
+                py-3
+              "
+              id="inputText"
+              aria-describedby="inputText"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="d-grid gap-2">
+        <button
+          type="submit"
+          class="btn btn-warning rounded-0 text-primary fw-bold fs-3 py-3"
+        >
+          下一步
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="my-10 d-none d-md-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-0 offset-md-1">
+        <div class="bg-primary px-8">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2 class="fw-bold text-white text-center pt-8 pb-4 fs-1 m-0">
+              付款
+            </h2>
+            <div class="row timeline-section position-relative">
+              <div class="col-4">
+                <div
+                  class="
+                    timeline-pointer timeline-pointer-active
+                    d-flex
+                    justify-content-between
+                    position-relative
+                  "
+                ></div>
+              </div>
+              <div class="col-4">
+                <div
+                  class="
+                    timeline-pointer
+                    d-flex
+                    justify-content-between
+                    position-relative
+                  "
+                ></div>
+              </div>
+              <div class="col-4">
+                <div
+                  class="
+                    timeline-pointer
+                    d-flex
+                    justify-content-between
+                    position-relative
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+          <form>
+            <div class="mb-3">
+              <label for="inputNum" class="form-label text-white fw-bold fs-5"
+                >信用卡卡號</label
+              >
+              <div class="d-flex">
+                <input
+                  type="text"
+                  placeholder="9012-3456-7890-1234"
+                  class="bg-info form-control rounded-0 border-0 py-3"
+                  id="inputNum"
+                />
+                <span
+                  class="
+                    input-group-text
+                    bg-info
+                    border-0
+                    rounded-0
+                    text-primary
+                  "
+                >
+                  <span class="material-icons-round"> credit_card </span>
+                </span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between">
+              <div class="mb-3">
+                <label
+                  for="inputName"
+                  class="form-label text-white fw-bold fs-5"
+                  >持卡人姓名</label
+                >
+                <div class="d-flex">
+                  <input
+                    type="text"
+                    placeholder="王"
+                    class="
+                      bg-info
+                      me-3
+                      form-control
+                      rounded-0
+                      border-0
+                      py-3
+                      pe-17
+                    "
+                    id="inputName"
+                    aria-describedby="inputText"
+                  />
+                  <input
+                    type="text"
+                    placeholder="小明"
+                    class="bg-info form-control rounded-0 border-0 py-3 pe-17"
+                    id="inputText2"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="mb-3">
+                <label class="form-label text-white fw-bold fs-5"
+                  >有效期限</label
+                >
+                <div class="d-flex justify-content-between">
+                  <select
+                    class="
+                      bg-info
+                      input-address
+                      form-select
+                      rounded-0
+                      border-0
+                      py-3
+                      me-3
+                    "
+                    aria-label="Default select example"
+                  >
+                    <option selected>月</option>
+                    <option value="1">2月</option>
+                    <option value="2">10月</option>
+                    <option value="3">12月</option>
+                  </select>
+                  <select
+                    class="
+                      bg-info
+                      input-address
+                      form-select
+                      rounded-0
+                      border-0
+                      py-3
+                    "
+                    aria-label="Default select example"
+                  >
+                    <option selected>年</option>
+                    <option value="1">2021</option>
+                    <option value="2">2020</option>
+                    <option value="3">2019</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="pb-10">
+              <label for="inputText" class="form-label text-white fw-bold fs-5"
+                >背面末三碼</label
+              >
+              <input
+                type="text"
+                placeholder="123"
+                class="
+                  bg-info
+                  last-number
+                  me-3
+                  form-control
+                  rounded-0
+                  border-0
+                  py-3
+                "
+                id="inputText"
+                aria-describedby="inputText"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="d-grid gap-2">
+          <button
+            type="submit"
+            class="btn btn-warning rounded-0 text-primary fw-bold fs-3 py-2"
+          >
+            下一步
+          </button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="d-grid gap-2">
+          <a
+            href="#"
+            class="
+              rounded-0
+              login-hover
+              fw-bold
+              text-center text-secondary
+              btn btn-info
+              border-1
+              py-3
+              fs-4
+            "
+          >
+            訂單摘要
+          </a>
+        </div>
+        <div class="card rounded-0 px-6">
+          <ul
+            class="
+              pt-3
+              text-secondary
+              d-flex
+              justify-content-between
+              list-unstyled
+            "
+          >
+            <li>小計</li>
+            <li>NT$ 2,700</li>
+          </ul>
+          <ul
+            class="text-secondary d-flex justify-content-between list-unstyled"
+          >
+            <li>運費</li>
+            <li>NT$ 300</li>
+          </ul>
+          <ul
+            class="
+              text-secondary
+              d-flex
+              justify-content-between
+              list-unstyled
+              fw-bold
+              fs-5
+            "
+          >
+            <li>總計</li>
+            <li>NT$ 3,000</li>
+          </ul>
+        </div>
+        <div class="d-grid gap-2 mt-3">
+          <a
+            href="#"
+            class="
+              rounded-0
+              login-hover
+              fw-bold
+              text-center text-secondary
+              btn btn-info
+              border-1
+              py-3
+              fs-4
+            "
+          >
+            購物清單
+          </a>
+        </div>
+        <div class="card rounded-0">
+          <ul
+            class="
+              list-unstyled
+              d-flex
+              align-items-center
+              justify-content-between
+              px-5
+              pt-3
+            "
+          >
+            <li>
+              <img
+                class="list-img"
+                src="https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db0c8e5539456faeca0e49c79e2ccb16&auto=format&fit=crop&w=800&q=60"
+                alt="甜點"
+              />
+            </li>
+            <li class="text-secondary fs-6">
+              焦糖馬卡龍 (2)<br />
+              <span class="fs-5 fw-bold">NT$ 900</span>
+            </li>
+          </ul>
+          <ul
+            class="
+              list-unstyled
+              d-flex
+              align-items-center
+              justify-content-between
+              px-5
+            "
+          >
+            <li>
+              <img
+                class="list-img"
+                src="https://images.unsplash.com/photo-1525203135335-74d272fc8d9c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61b27d2cefd0dd094b5439f897b43bb7&auto=format&fit=crop&w=700&q=60"
+                alt="甜點"
+              />
+            </li>
+            <li class="text-secondary fs-6">
+              焦糖馬卡龍 (2)<br />
+              <span class="fs-5 fw-bold">NT$ 900</span>
+            </li>
+          </ul>
+          <ul
+            class="
+              list-unstyled
+              d-flex
+              align-items-center
+              justify-content-between
+              px-5
+            "
+          >
+            <li>
+              <img
+                class="list-img"
+                src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5d2452cace2ee90c9781c7a39c9a30cf&auto=format&fit=crop&w=800&q=60"
+                alt="甜點"
+              />
+            </li>
+            <li class="text-secondary fs-6">
+              焦糖馬卡龍 (2)<br />
+              <span class="fs-5 fw-bold">NT$ 900</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

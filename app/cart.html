@@ -1,0 +1,361 @@
+---
+title: 購物車
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<!-- 手機 -->
+<section class="d-block d-md-none">
+  <div class="d-grid gap-2">
+    <a
+      href="#"
+      class="
+        rounded-0
+        login-hover
+        fw-bold
+        text-center text-primary
+        btn btn-info
+        border-0
+        py-3
+        fs-4
+      "
+    >
+      您的購物車
+    </a>
+  </div>
+  <div class="container">
+    <ul
+      class="
+        list-unstyled
+        d-flex
+        align-items-center
+        justify-content-between
+        border-1 border-bottom
+        py-3
+      "
+    >
+      <li>
+        <img
+          class="cart-img"
+          src="https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db0c8e5539456faeca0e49c79e2ccb16&auto=format&fit=crop&w=800&q=60"
+          alt="甜點"
+        />
+      </li>
+      <li class="text-primary fs-5">
+        焦糖馬卡龍<br />
+        <span class="fs-6">NT$ 450</span>
+        <div class="input-group">
+          <span class="input-group-text btn btn-white border">
+            <span class="material-icons-round"> remove </span>
+          </span>
+          <a href="#" class="px-3 py-2 border border-1">2</a>
+          <span class="input-group-text btn btn-white border">
+            <span class="material-icons-round"> add </span>
+          </span>
+        </div>
+      </li>
+    </ul>
+    <div class="text-primary fw-bold fs-5 text-end border-1 border-bottom pb-3">
+      NT$ 900
+    </div>
+    <ul
+      class="
+        list-unstyled
+        d-flex
+        align-items-center
+        justify-content-between
+        border-1 border-bottom
+        py-3
+      "
+    >
+      <li>
+        <img
+          class="cart-img"
+          src="https://images.unsplash.com/photo-1525203135335-74d272fc8d9c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61b27d2cefd0dd094b5439f897b43bb7&auto=format&fit=crop&w=700&q=60"
+          alt="甜點"
+        />
+      </li>
+      <li class="text-primary fs-5">
+        焦糖馬卡龍<br />
+        <span class="fs-6">NT$ 450</span>
+        <div class="input-group">
+          <span class="input-group-text btn btn-white border">
+            <span class="material-icons-round"> remove </span>
+          </span>
+          <a href="#" class="px-3 py-2 border border-1">2</a>
+          <span class="input-group-text btn btn-white border">
+            <span class="material-icons-round"> add </span>
+          </span>
+        </div>
+      </li>
+    </ul>
+    <div class="text-primary fw-bold fs-5 text-end border-1 border-bottom pb-3">
+      NT$ 900
+    </div>
+    <ul
+      class="
+        list-unstyled
+        d-flex
+        align-items-center
+        justify-content-between
+        border-1 border-bottom
+        py-3
+      "
+    >
+      <li>
+        <img
+          class="cart-img"
+          src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5d2452cace2ee90c9781c7a39c9a30cf&auto=format&fit=crop&w=800&q=60"
+          alt="甜點"
+        />
+      </li>
+      <li class="text-primary fs-5">
+        焦糖馬卡龍<br />
+        <span class="fs-6">NT$ 450</span>
+        <div class="input-group">
+          <span class="input-group-text btn btn-white border">
+            <span class="material-icons-round"> remove </span>
+          </span>
+          <a href="#" class="px-3 py-2 border border-1">2</a>
+          <span class="input-group-text btn btn-white border">
+            <span class="material-icons-round"> add </span>
+          </span>
+        </div>
+      </li>
+    </ul>
+    <div class="text-primary fw-bold fs-5 text-end border-1 border-bottom pb-3">
+      NT$ 900
+    </div>
+    <div class="bg-white mt-6">
+      <div class="mx-auto">
+        <h4
+          class="bg-info text-center text-primary py-3"
+        >
+          訂單摘要
+        </h4>
+        <ul class="text-primary d-flex justify-content-between list-unstyled">
+          <li>小計</li>
+          <li>NT$ 2,700</li>
+        </ul>
+        <ul class="text-primary d-flex justify-content-between list-unstyled">
+          <li>運費</li>
+          <li>NT$ 300</li>
+        </ul>
+        <ul
+          class="
+            text-primary
+            d-flex
+            justify-content-between
+            list-unstyled
+            fw-bold
+            fs-5
+          "
+        >
+          <li>總計</li>
+          <li>NT$ 3,000</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="d-grid gap-2">
+    <a
+      href="#"
+      class="
+        rounded-0
+        login-hover
+        fw-bold
+        text-center text-primary
+        btn btn-warning
+        border-0
+        py-3
+        fs-4
+      "
+    >
+      結帳
+    </a>
+  </div>
+</section>
+
+<section class="d-none d-md-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="d-grid gap-2">
+          <a
+            href="#"
+            class="
+              rounded-0
+              login-hover
+              fw-bold
+              text-center text-primary
+              btn btn-info
+              border-0
+              py-3
+              fs-4
+            "
+          >
+            您的購物車
+          </a>
+        </div>
+        <ul
+          class="
+            list-unstyled
+            d-flex
+            align-items-center
+            justify-content-between
+            border-1 border-bottom
+            py-3
+          "
+        >
+          <li>
+            <img
+              class="cart-img"
+              src="https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db0c8e5539456faeca0e49c79e2ccb16&auto=format&fit=crop&w=800&q=60"
+              alt="甜點"
+            />
+          </li>
+          <li class="text-primary fs-5">
+            焦糖馬卡龍<br />
+            <span class="fs-6">NT$ 450</span>
+          </li>
+          <li>
+            <div class="input-group">
+              <span class="input-group-text btn btn-white border">
+                <span class="material-icons-round"> remove </span>
+              </span>
+              <a href="#" class="px-3 py-2 border border-1">2</a>
+              <span class="input-group-text btn btn-white border">
+                <span class="material-icons-round"> add </span>
+              </span>
+            </div>
+          </li>
+          <li class="text-primary fw-bold fs-5">NT$ 900</li>
+          <li class="text-secondary">
+            <span class="material-icons-round"> delete_outline </span>
+          </li>
+        </ul>
+        <ul
+          class="
+            list-unstyled
+            d-flex
+            align-items-center
+            justify-content-between
+            border-1 border-bottom
+            py-3
+          "
+        >
+          <li>
+            <img
+              class="cart-img"
+              src="https://images.unsplash.com/photo-1525203135335-74d272fc8d9c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61b27d2cefd0dd094b5439f897b43bb7&auto=format&fit=crop&w=700&q=60"
+              alt="甜點"
+            />
+          </li>
+          <li class="text-primary fs-5">
+            焦糖馬卡龍<br />
+            <span class="fs-6">NT$ 450</span>
+          </li>
+          <li>
+            <div class="input-group">
+              <span class="input-group-text btn btn-white border">
+                <span class="material-icons-round"> remove </span>
+              </span>
+              <a href="#" class="px-3 py-2 border border-1">2</a>
+              <span class="input-group-text btn btn-white border">
+                <span class="material-icons-round"> add </span>
+              </span>
+            </div>
+          </li>
+          <li class="text-primary fw-bold fs-5">NT$ 900</li>
+          <li class="text-secondary">
+            <span class="material-icons-round"> delete_outline </span>
+          </li>
+        </ul>
+        <ul
+          class="
+            list-unstyled
+            d-flex
+            align-items-center
+            justify-content-between
+            py-3
+          "
+        >
+          <li>
+            <img
+              class="cart-img"
+              src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5d2452cace2ee90c9781c7a39c9a30cf&auto=format&fit=crop&w=800&q=60"
+              alt="甜點"
+            />
+          </li>
+          <li class="text-primary fs-5">
+            焦糖馬卡龍<br />
+            <span class="fs-6">NT$ 450</span>
+          </li>
+          <li>
+            <div class="input-group">
+              <span class="input-group-text btn btn-white border">
+                <span class="material-icons-round"> remove </span>
+              </span>
+              <a href="#" class="px-3 py-2 border border-1">2</a>
+              <span class="input-group-text btn btn-white border">
+                <span class="material-icons-round"> add </span>
+              </span>
+            </div>
+          </li>
+          <li class="text-primary fw-bold fs-5">NT$ 900</li>
+          <li class="text-secondary">
+            <span class="material-icons-round"> delete_outline </span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <div class="bg-primary">
+          <div class="order-w mx-auto">
+            <h4 class="text-center text-white border-1 border-bottom py-3">
+              訂單摘要
+            </h4>
+            <ul class="text-white d-flex justify-content-between list-unstyled">
+              <li>小計</li>
+              <li>NT$ 2,700</li>
+            </ul>
+            <ul class="text-white d-flex justify-content-between list-unstyled">
+              <li>運費</li>
+              <li>NT$ 300</li>
+            </ul>
+            <ul
+              class="
+                text-white
+                d-flex
+                justify-content-between
+                list-unstyled
+                fw-bold
+                fs-5
+              "
+            >
+              <li>總計</li>
+              <li>NT$ 3,000</li>
+            </ul>
+          </div>
+          <div class="d-grid gap-2">
+            <a
+              href="#"
+              class="
+                rounded-0
+                login-hover
+                fw-bold
+                text-center text-primary
+                btn btn-warning
+                border-0
+                py-3
+                fs-4
+              "
+            >
+              結帳
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

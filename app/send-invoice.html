@@ -1,0 +1,494 @@
+---
+title: 郵寄發票資訊
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<!-- 手機 -->
+<section class="d-block d-md-none">
+  <div class="row">
+    <div class="col-12">
+      <div class="bg-primary px-4">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 class="fw-bold text-white text-center pt-4 pb-4 fs-1 m-0">
+            發票
+          </h2>
+          <div class="row timeline-section position-relative">
+            <div class="col-4">
+              <div
+                class="
+                  timeline-pointer timeline-pointer-active
+                  d-flex
+                  justify-content-between
+                  position-relative
+                "
+              ></div>
+            </div>
+            <div class="col-4">
+              <div
+                class="
+                  timeline-pointer
+                  d-flex
+                  justify-content-between
+                  position-relative
+                "
+              ></div>
+            </div>
+            <div class="col-4">
+              <div
+                class="
+                  timeline-pointer
+                  d-flex
+                  justify-content-between
+                  position-relative
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+        <form>
+          <div class="row mb-6 g-0">
+            <div class="col-6">
+              <button
+                type="button"
+                class="
+                  choose-invoice
+                  text-primary
+                  btn btn-info
+                  border-1
+                  rounded-0
+                  fs-5
+                  fw-bold
+                  py-3
+                "
+              >
+                電子發票
+              </button>
+            </div>
+            <div class="col-6">
+              <button
+                type="button"
+                class="
+                  choose-invoice
+                  text-info
+                  border-1
+                  btn btn-primary
+                  rounded-0
+                  border-info
+                  fs-5
+                  fw-bold
+                  py-3
+                "
+              >
+                郵寄發票
+              </button>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="mb-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <label
+                  for="inputAddress"
+                  class="form-label text-white fw-bold fs-5 m-0"
+                  >地址</label
+                >
+                <div class="form-check">
+                  <input
+                    class="form-check-input rounded-0 border-0"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label
+                    class="form-check-label text-white fw-bold"
+                    for="flexCheckDefault"
+                  >
+                    同運送地址
+                  </label>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between">
+                <select
+                  class="
+                    bg-info
+                    input-address
+                    form-select
+                    rounded-0
+                    border-0
+                    py-3
+                    me-3
+                  "
+                  aria-label="Default select example"
+                >
+                  <option selected>高雄市</option>
+                  <option value="1">嘉義市</option>
+                  <option value="2">台南市</option>
+                  <option value="3">台北市</option>
+                </select>
+                <select
+                  class="
+                    bg-info
+                    input-address
+                    form-select
+                    rounded-0
+                    border-0
+                    py-3
+                  "
+                  aria-label="Default select example"
+                >
+                  <option selected>新興區</option>
+                  <option value="1">萬里區</option>
+                  <option value="2">山東區</option>
+                  <option value="3">安南區</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="pb-8">
+            <input
+              type="text"
+              placeholder="幸福路 520 號"
+              class="bg-info form-control rounded-0 border-0 py-3"
+            />
+          </div>
+          <div class="pb-8">
+            <label
+              for="inputSerialNumber"
+              class="form-label text-white fw-bold fs-5"
+              >統一編號（選填）</label
+            >
+            <div class="d-flex">
+              <input
+                type="text"
+                placeholder="12345678"
+                class="bg-info form-control rounded-0 border-0 py-3"
+                id="inputSerialNumber"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="d-grid gap-2">
+        <button
+          type="submit"
+          class="btn btn-warning rounded-0 text-primary fw-bold fs-3 py-3"
+        >
+          確認結帳
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="my-10 d-none d-md-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-0 offset-md-1">
+        <div class="bg-primary px-8">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2 class="fw-bold text-white text-center pt-8 pb-4 fs-1 m-0">
+              發票
+            </h2>
+            <div class="row timeline-section position-relative">
+              <div class="col-4">
+                <div
+                  class="
+                    timeline-pointer timeline-pointer-active
+                    d-flex
+                    justify-content-between
+                    position-relative
+                  "
+                ></div>
+              </div>
+              <div class="col-4">
+                <div
+                  class="
+                    timeline-pointer
+                    d-flex
+                    justify-content-between
+                    position-relative
+                  "
+                ></div>
+              </div>
+              <div class="col-4">
+                <div
+                  class="
+                    timeline-pointer
+                    d-flex
+                    justify-content-between
+                    position-relative
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+          <form>
+            <div class="row mb-6 g-0">
+              <div class="col-md-6">
+                <button
+                  type="button"
+                  class="
+                    choose-invoice
+                    text-primary
+                    btn btn-info
+                    border-1
+                    rounded-0
+                    fs-5
+                    fw-bold
+                    py-3
+                  "
+                >
+                  電子發票
+                </button>
+              </div>
+              <div class="col-md-6">
+                <button
+                  type="button"
+                  class="
+                    choose-invoice
+                    text-info
+                    border-1
+                    btn btn-primary
+                    rounded-0
+                    border-info
+                    fs-5
+                    fw-bold
+                    py-3
+                  "
+                >
+                  郵寄發票
+                </button>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <label
+                    for="inputAddress"
+                    class="form-label text-white fw-bold fs-5 m-0"
+                    >地址</label
+                  >
+                  <div class="form-check">
+                    <input
+                      class="bg-info form-check-input rounded-0 border-0"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label
+                      class="form-check-label text-white fw-bold"
+                      for="flexCheckDefault"
+                    >
+                      同運送地址
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <select
+                    class="
+                      bg-info
+                      input-address
+                      form-select
+                      rounded-0
+                      border-0
+                      py-3
+                      me-3
+                    "
+                    aria-label="Default select example"
+                  >
+                    <option selected>高雄市</option>
+                    <option value="1">嘉義市</option>
+                    <option value="2">台南市</option>
+                    <option value="3">台北市</option>
+                  </select>
+                  <select
+                    class="
+                      bg-info
+                      input-address
+                      form-select
+                      rounded-0
+                      border-0
+                      py-3
+                    "
+                    aria-label="Default select example"
+                  >
+                    <option selected>新興區</option>
+                    <option value="1">萬里區</option>
+                    <option value="2">山東區</option>
+                    <option value="3">安南區</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="pb-8">
+              <input
+                type="text"
+                placeholder="幸福路 520 號"
+                class="bg-info form-control rounded-0 border-0 py-3"
+              />
+            </div>
+            <div class="pb-8">
+              <label
+                for="inputSerialNumber"
+                class="form-label text-white fw-bold fs-5"
+                >統一編號（選填）</label
+              >
+              <div class="d-flex">
+                <input
+                  type="text"
+                  placeholder="12345678"
+                  class="bg-info form-control rounded-0 border-0 py-3"
+                  id="inputSerialNumber"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="d-grid gap-2">
+          <button
+            type="submit"
+            class="btn btn-warning rounded-0 text-primary fw-bold fs-3 py-2"
+          >
+            確認結帳
+          </button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="d-grid gap-2">
+          <a
+            href="#"
+            class="
+              rounded-0
+              login-hover
+              fw-bold
+              text-center text-secondary
+              btn btn-info
+              border-1
+              py-3
+              fs-4
+            "
+          >
+            訂單摘要
+          </a>
+        </div>
+        <div class="card rounded-0 px-6">
+          <ul
+            class="
+              pt-3
+              text-secondary
+              d-flex
+              justify-content-between
+              list-unstyled
+            "
+          >
+            <li>小計</li>
+            <li>NT$ 2,700</li>
+          </ul>
+          <ul
+            class="text-secondary d-flex justify-content-between list-unstyled"
+          >
+            <li>運費</li>
+            <li>NT$ 300</li>
+          </ul>
+          <ul
+            class="
+              text-secondary
+              d-flex
+              justify-content-between
+              list-unstyled
+              fw-bold
+              fs-5
+            "
+          >
+            <li>總計</li>
+            <li>NT$ 3,000</li>
+          </ul>
+        </div>
+        <div class="d-grid gap-2 mt-3">
+          <a
+            href="#"
+            class="
+              rounded-0
+              login-hover
+              fw-bold
+              text-center text-secondary
+              btn btn-info
+              border-1
+              py-3
+              fs-4
+            "
+          >
+            購物清單
+          </a>
+        </div>
+        <div class="card rounded-0">
+          <ul
+            class="
+              list-unstyled
+              d-flex
+              align-items-center
+              justify-content-between
+              px-5
+              pt-3
+            "
+          >
+            <li>
+              <img
+                class="list-img"
+                src="https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db0c8e5539456faeca0e49c79e2ccb16&auto=format&fit=crop&w=800&q=60"
+                alt="甜點"
+              />
+            </li>
+            <li class="text-secondary fs-6">
+              焦糖馬卡龍 (2)<br />
+              <span class="fs-5 fw-bold">NT$ 900</span>
+            </li>
+          </ul>
+          <ul
+            class="
+              list-unstyled
+              d-flex
+              align-items-center
+              justify-content-between
+              px-5
+            "
+          >
+            <li>
+              <img
+                class="list-img"
+                src="https://images.unsplash.com/photo-1525203135335-74d272fc8d9c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61b27d2cefd0dd094b5439f897b43bb7&auto=format&fit=crop&w=700&q=60"
+                alt="甜點"
+              />
+            </li>
+            <li class="text-secondary fs-6">
+              焦糖馬卡龍 (2)<br />
+              <span class="fs-5 fw-bold">NT$ 900</span>
+            </li>
+          </ul>
+          <ul
+            class="
+              list-unstyled
+              d-flex
+              align-items-center
+              justify-content-between
+              px-5
+            "
+          >
+            <li>
+              <img
+                class="list-img"
+                src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5d2452cace2ee90c9781c7a39c9a30cf&auto=format&fit=crop&w=800&q=60"
+                alt="甜點"
+              />
+            </li>
+            <li class="text-secondary fs-6">
+              焦糖馬卡龍 (2)<br />
+              <span class="fs-5 fw-bold">NT$ 900</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

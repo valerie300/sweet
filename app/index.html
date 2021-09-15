@@ -1,0 +1,330 @@
+---
+title: 甜點首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<!-- banner -->
+<div class="container d-none d-md-block">
+  <div class="banner banner-dessert"></div>
+</div>
+<!-- 手機banner -->
+<div class="banner banner-dessert d-block d-md-none"></div>
+<!-- 三欄 -->
+<div class="mt-cover">
+  <div class="d-flex justify-content-center">
+    <div class="square square-choice"></div>
+    <div class="square square-popularity"></div>
+    <div class="square square-newproduct"></div>
+  </div>
+  <div class="d-flex justify-content-center">
+    <div class="rectangle bg-warning position-relative">
+      <h4
+        class="
+          text-mode text-primary
+          fw-bold
+          position-absolute
+          top-50
+          translate-middle
+          position-left
+        "
+      >
+        本日精選
+      </h4>
+    </div>
+    <div class="rectangle bg-primary position-relative">
+      <h4
+        class="
+          text-mode text-white
+          position-absolute
+          top-50
+          translate-middle
+          position-left
+        "
+      >
+        人氣推薦
+      </h4>
+    </div>
+    <div class="rectangle bg-primary position-relative">
+      <h4
+        class="
+          text-mode text-white
+          position-absolute
+          top-50
+          translate-middle
+          position-left
+        "
+      >
+        新品上市
+      </h4>
+    </div>
+  </div>
+</div>
+<!-- 手機 -->
+<section class="d-block d-md-none">
+  <div class="container mt-7 d-flex">
+    <img
+      width="200"
+      class="mx-auto"
+      src="https://raw.githubusercontent.com/Wcc723/F2E-PK/master/source/images/sm-%E7%82%BA%E4%BB%80%E9%BA%BC%E9%81%B8%E6%93%87%E4%BA%86%E5%81%9A%E7%94%9C%E9%BB%9E.svg"
+      alt="為什麼選擇做甜點"
+    />
+  </div>
+  <img
+    class="sweet-img mt-7"
+    src="https://images.unsplash.com/photo-1519730722595-a5ff788dea4d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2712a33fe9b13532f0682ac4e1e749b8&auto=format&fit=crop&w=600&q=60"
+    alt="甜點"
+  />
+  <div class="container bg-info">
+    <p class="text-secondary p-5">
+      青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。<br />
+      <br />
+      是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。
+    </p>
+  </div>
+  <div class="container mt-7 d-flex">
+    <img
+      width="200"
+      class="mx-auto"
+      src="https://raw.githubusercontent.com/Wcc723/F2E-PK/master/source/images/sm-%E7%82%BA%E4%BB%80%E9%BA%BC%E4%B8%80%E5%AE%9A%E8%A6%81%E5%90%83%E7%94%9C%E9%BB%9E.svg"
+      alt="為什麼選擇吃甜點"
+    />
+  </div>
+  <img
+    class="sweet-img mt-7"
+    src="https://images.unsplash.com/photo-1501432781167-c0ccfd492297?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=621c4e9986fba1c4514dfdc30e095bd2&auto=format&fit=crop&w=600&q=60"
+    alt="甜點"
+  />
+  <div class="container bg-info">
+    <p class="text-secondary p-5">
+      青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。<br />
+      <br />
+      是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。
+    </p>
+  </div>
+  <div class="container mt-7 d-flex">
+    <img
+      width="200"
+      class="mx-auto"
+      src="https://raw.githubusercontent.com/Wcc723/F2E-PK/master/source/images/sm-%E6%83%B3%E5%90%83%E7%94%9C%E9%BB%9E%E6%98%AF%E4%B8%8D%E9%9C%80%E8%A6%81%E7%90%86%E7%94%B1%E7%9A%84.svg"
+      alt="為什麼選擇做甜點"
+    />
+  </div>
+</section>
+<!-- 為什麼選擇做甜點 -->
+<section class="bg-info py-15 mt-7 mt-md-17 d-none d-md-block">
+  <div class="container">
+    <div class="d-flex flex-row-reverse">
+      <img
+        width="100"
+        class="sweet-choose ms-11 d-none d-md-block"
+        src="https://raw.githubusercontent.com/Wcc723/F2E-PK/master/source/images/lg-%E7%82%BA%E4%BB%80%E9%BA%BC%E9%81%B8%E6%93%87%E4%BA%86%E5%81%9A%E7%94%9C%E9%BB%9E.svg"
+        alt="為什麼選擇做甜點"
+      />
+      <div class="text-mode text-secondary d-flex flex-column-reverse">
+        <p>青山依舊在，幾度夕陽紅。慣看秋月春風。</p>
+        <p>一壺濁酒喜相逢，浪花淘盡英雄。是非</p>
+        <p>成敗轉頭空，滾滾長江東逝水，白髮漁樵江</p>
+        <p>渚上，古今多少事，都付笑談中。</p>
+        <p>是非成敗轉頭空，滾滾長江東逝水，白</p>
+        <p>髮漁樵江渚上，古今多少事，都付笑談中。</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container d-none d-md-block">
+  <div class="row">
+    <div class="col-md-6">
+      <img
+        class="sweet-img"
+        src="https://images.unsplash.com/photo-1519730722595-a5ff788dea4d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2712a33fe9b13532f0682ac4e1e749b8&auto=format&fit=crop&w=600&q=60"
+        alt="甜點"
+      />
+    </div>
+  </div>
+</div>
+<!-- 為什麼選擇吃甜點 -->
+<section class="bg-info py-15 mt-17 d-none d-md-block">
+  <div class="container">
+    <div class="d-flex">
+      <img
+        width="100"
+        class="sweet-choose ms-11 order-2 d-none d-md-block"
+        src="https://raw.githubusercontent.com/Wcc723/F2E-PK/master/source/images/lg-%E7%82%BA%E4%BB%80%E9%BA%BC%E4%B8%80%E5%AE%9A%E8%A6%81%E5%90%83%E7%94%9C%E9%BB%9E.svg"
+        alt="為什麼選擇吃甜點"
+      />
+      <div class="order-1 text-mode text-secondary d-flex flex-column-reverse">
+        <p>青山依舊在，幾度夕陽紅。慣看秋月春風。</p>
+        <p>一壺濁酒喜相逢，浪花淘盡英雄。是非</p>
+        <p>成敗轉頭空，滾滾長江東逝水，白髮漁樵江</p>
+        <p>渚上，古今多少事，都付笑談中。</p>
+        <p>是非成敗轉頭空，滾滾長江東逝水，白</p>
+        <p>髮漁樵江渚上，古今多少事，都付笑談中。</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="container d-none d-md-block">
+  <div class="row flex-row-reverse">
+    <div class="col-md-6">
+      <img
+        class="sweet-img"
+        src="https://images.unsplash.com/photo-1501432781167-c0ccfd492297?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=621c4e9986fba1c4514dfdc30e095bd2&auto=format&fit=crop&w=600&q=60"
+        alt="甜點"
+      />
+    </div>
+  </div>
+</div>
+<!-- 想吃甜點不需要理由 -->
+<div class="my-17 d-none d-md-block">
+  <img
+    width="100"
+    class="d-flex justify-content-center mx-auto"
+    src="https://raw.githubusercontent.com/Wcc723/F2E-PK/master/source/images/lg-%E6%83%B3%E5%90%83%E7%94%9C%E9%BB%9E%E6%98%AF%E4%B8%8D%E9%9C%80%E8%A6%81%E7%90%86%E7%94%B1%E7%9A%84.svg"
+    alt="甜點"
+  />
+</div>
+<!-- card -->
+<div class="container mb-12 mt-7 mt-md-0">
+  <ul class="row list-unstyled flex-wrap">
+    <li class="col-md-4 mb-5 mb-md-0">
+      <div class="card border-0 rounded-0 position-relative">
+        <p
+          class="
+            card-chosen
+            position-absolute
+            text-mode text-white
+            bg-primary
+            p-2
+            ms-4
+          "
+        >
+          本日精選
+        </p>
+        <img
+          src="https://i.imgur.com/dZfpSBj.png"
+          class="card-like position-absolute d-block"
+          alt="like icon"
+        />
+        <img
+          class="card-dessert"
+          src="https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7c376ffa487bcd258df29dc881b10703&auto=format&fit=crop&w=700&q=60"
+          alt="Donuts photo"
+        />
+      </div>
+      <ul
+        class="
+          border-start border-end
+          list-unstyled
+          d-flex
+          justify-content-center
+        "
+      >
+        <li class="h5 text-primary py-3 m-0 mx-auto">焦糖馬卡龍</li>
+        <li class="h5 text-primary fw-bold border-start py-3 ps-10 m-0 mx-auto">
+          NT$ 450
+        </li>
+      </ul>
+      <div class="d-grid gap-2">
+        <a
+          href="#"
+          class="card-add btn btn-info text-primary fw-bolder fs-4 rounded-0"
+          >加入購物車</a
+        >
+      </div>
+    </li>
+    <li class="col-md-4 mb-5 mb-md-0">
+      <div class="card border-0 rounded-0 position-relative">
+        <p
+          class="
+            card-chosen
+            position-absolute
+            text-mode text-white
+            bg-primary
+            p-2
+            ms-4
+          "
+        >
+          本日精選
+        </p>
+        <img
+          src="https://i.imgur.com/dZfpSBj.png"
+          class="card-like position-absolute d-block"
+          alt="like icon"
+        />
+        <img
+          class="card-dessert"
+          src="https://images.unsplash.com/photo-1525203135335-74d272fc8d9c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=61b27d2cefd0dd094b5439f897b43bb7&auto=format&fit=crop&w=700&q=60"
+          alt="Donuts photo"
+        />
+      </div>
+      <ul
+        class="
+          border-start border-end
+          list-unstyled
+          d-flex
+          justify-content-center
+        "
+      >
+        <li class="h5 text-primary py-3 m-0 mx-auto">焦糖馬卡龍</li>
+        <li class="h5 text-primary fw-bold border-start py-3 ps-10 m-0 mx-auto">
+          NT$ 450
+        </li>
+      </ul>
+      <div class="d-grid gap-2">
+        <a
+          href="#"
+          class="card-add btn btn-info text-primary fw-bolder fs-4 rounded-0"
+          >加入購物車</a
+        >
+      </div>
+    </li>
+    <li class="col-md-4">
+      <div class="card border-0 rounded-0 position-relative">
+        <p
+          class="
+            card-chosen
+            position-absolute
+            text-mode text-white
+            bg-primary
+            p-2
+            ms-4
+          "
+        >
+          本日精選
+        </p>
+        <img
+          src="https://i.imgur.com/dZfpSBj.png"
+          class="card-like position-absolute d-block"
+          alt="like icon"
+        />
+        <img
+          class="card-dessert"
+          src="https://images.unsplash.com/photo-1504473089979-b1c4993a9653?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9db69b72e1f7d1b4e5c81cee531108ff&auto=format&fit=crop&w=700&q=60"
+          alt="Donuts photo"
+        />
+      </div>
+      <ul
+        class="
+          border-start border-end
+          list-unstyled
+          d-flex
+          justify-content-center
+        "
+      >
+        <li class="h5 text-primary py-3 m-0 mx-auto">焦糖馬卡龍</li>
+        <li class="h5 text-primary fw-bold border-start py-3 ps-10 m-0 mx-auto">
+          NT$ 450
+        </li>
+      </ul>
+      <div class="d-grid gap-2">
+        <a
+          href="#"
+          class="card-add btn btn-info text-primary fw-bolder fs-4 rounded-0"
+          >加入購物車</a
+        >
+      </div>
+    </li>
+  </ul>
+</div>

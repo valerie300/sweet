@@ -1,0 +1,139 @@
+.banner{
+  &{
+    width: 100%;
+    height: 496px;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: cover;
+  }
+  &-dessert{
+    background-image: url(https://images.unsplash.com/photo-1473256599800-b48c7c88cd7e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae0d68ab0db4ee79bdce92722b31112b&auto=format&fit=crop&w=2725&q=80);
+  }
+  @include media-breakpoint-down(sm) {
+    &{
+      width: 100%;
+      height: 277px;
+    }
+  }
+}
+// 三欄
+.square{
+  &{
+    position: relative;
+    width: 260px;
+    height: 256px;
+    margin: 0 1px;
+  }
+  @include media-breakpoint-down(sm) {
+    &{
+      height: 180px;
+    }
+    &:first-child{
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &-choice,&-popularity,&-newproduct{
+    overflow: hidden;
+  }
+  &-choice::after,&-popularity::after,&-newproduct::after{
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    right: -20px;
+    bottom: -20px;
+    filter: blur(10px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &-choice::after{
+    background-image: url(https://images.unsplash.com/photo-1490914327627-9fe8d52f4d90?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=73ed228f25bdefd2291c242f6d390fca&auto=format&fit=crop&w=600&q=60);
+  }
+  &-popularity::after{
+    background-image: url(https://images.unsplash.com/photo-1504114133367-631ecd3db3ca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b75e93d90cd88467ae5715becb431a26&auto=format&fit=crop&w=600&q=60);
+  }
+  &-newproduct::after{
+    background-image: url(https://images.unsplash.com/photo-1499638472904-ea5c6178a300?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c27da96f7150c96a92ba8a53c8644761&auto=format&fit=crop&w=600&q=60);
+  }
+}
+.rectangle{
+  &{
+    width: 260px;
+    height: 256px;
+    opacity: 0.7;
+    margin: -256px 1px 0;
+  }
+  @include media-breakpoint-down(sm) {
+    &{
+      font-size: 20px;
+      white-space:nowrap;
+      width: 125px;
+      height: 180px;
+      margin-top: -180px;
+    }
+  }
+}
+.mt-cover{
+  margin-top: -5%;
+}
+@include media-breakpoint-down(sm) {
+  .mt-cover{
+      margin-top: 0;
+  }
+}
+.text-mode{
+  writing-mode: vertical-lr;
+}
+.position-left{
+  left: 38%;
+}
+@include media-breakpoint-down(sm) {
+  .position-left{
+    left: 27%;
+  }
+}
+// 為什麼選擇做甜點
+.sweet{
+  &-img{
+    margin-top: -79%;
+    width: 540px;
+    height: 540px;
+    object-fit: cover;
+  }
+  &-choose{
+    margin-top: -12%;
+  }
+  @include media-breakpoint-down(sm) {
+    &-img{
+      width: 375px;
+      height: 250px;
+    }
+  }
+}
+// card
+.card{
+  &-chosen {
+    line-height: 1.4rem;
+    letter-spacing: 0.3rem;
+  }
+  &-like {
+    margin: 15px 0 0 360px;
+    width: 25px;
+  }
+  &-dessert{
+    height: 440px;
+    object-fit: cover;
+  }
+  &-add:hover{
+    background-color: #8DA291;
+  }
+  @include media-breakpoint-down(sm) {
+    &-like {
+      margin: 15px 0 0 300px;
+    }
+  }
+}
